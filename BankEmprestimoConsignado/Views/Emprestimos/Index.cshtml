@@ -1,0 +1,230 @@
+﻿@model IEnumerable<BankEmprestimoConsignado.Models.Emprestimo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Empréstimo</h1>
+@*Adicionado*@
+<a asp-action="Create" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-dialog-link u-hover-palette-1-light-1 u-radius-4 u-text-body-color u-btn-4">Novo Empréstimo</a>
+<div class="u-align-left-md u-align-left-sm u-align-left-xs u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-table u-table-responsive u-table-1">
+   @* <table class="u-table-entity">
+    <colgroup>
+        <col width="17.4%">
+        <col width="13.2%">
+        <col width="11.8%">
+        <col width="17.2%">
+        <col width="9.9%">
+        <col width="13.8%">
+        <col width="9%">
+        <col width="7.7%">
+    </colgroup>
+    <thead class="u-black u-table-header u-table-header-1">
+        <tr style="height: 26px;">
+        <th class="u-border-1 u-border-black u-custom-color-2 u-table-cell u-table-cell-1"> @Html.DisplayNameFor(model => model.Nome)</th>
+        <th class="u-border-1 u-border-black u-custom-color-2 u-table-cell u-table-cell-2"> @Html.DisplayNameFor(model => model.Cpf)</th>
+        <th class="u-border-1 u-border-black u-custom-color-2 u-table-cell u-table-cell-3"> @Html.DisplayNameFor(model => model.Nascimento)</th>
+        <th class="u-border-1 u-border-black u-custom-color-2 u-table-cell u-table-cell-4"> @Html.DisplayNameFor(model => model.Profissao) </th>
+        <th class="u-border-1 u-border-black u-custom-color-2 u-table-cell u-table-cell-5"> @Html.DisplayNameFor(model => model.Margem)</th>
+        <th class="u-border-1 u-border-black u-custom-color-2 u-table-cell u-table-cell-6"> @Html.DisplayNameFor(model => model.MargemCartao)</th>
+        <th class="u-border-1 u-border-black u-custom-color-2 u-table-cell u-table-cell-7"> @Html.DisplayNameFor(model => model.Salario)</th>
+        <th class="u-border-1 u-border-black u-custom-color-2 u-table-cell u-table-cell-8"> @Html.DisplayNameFor(model => model.Status)</th>
+        </tr>
+    </thead>
+        <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cpf)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Profissao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Margem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MargemCartao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCliente">Alterar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCliente">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCliente">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+    
+    </table>*@
+         <table class="table">
+            <thead>
+                <tr>
+                    <th class="u-custom-color-2">
+                        @Html.DisplayNameFor(model => model.ValorLiberado)
+                    </th>
+                    <th class="u-custom-color-2">
+                        @Html.DisplayNameFor(model => model.ValorEmprestimo)
+                    </th>
+                    <th class="u-custom-color-2">
+                        @Html.DisplayNameFor(model => model.DataVenc)
+                    </th>
+                    <th class="u-custom-color-2">
+                        @Html.DisplayNameFor(model => model.ValorParcela)
+                    </th>
+                    <th class="u-custom-color-2">
+                        @Html.DisplayNameFor(model => model.QtdParcela)
+                    </th>
+                    <th class="u-custom-color-2">
+                        @Html.DisplayNameFor(model => model.TaxaJuros)
+                    </th>
+                    <th class="u-custom-color-2">
+                        @Html.DisplayNameFor(model => model.QtdParcelaRest)
+                    </th>
+                    <th class="u-custom-color-2">
+                        @Html.DisplayNameFor(model => model.StatusEmprest)
+                    </th>
+                    <th class="u-custom-color-2">
+                         @Html.DisplayNameFor(model => model.TipoEmprest)
+                    </th>
+                    <th class="u-custom-color-2">
+                         @Html.DisplayNameFor(model => model.IdClienteNavigation)
+                    </th>
+                    <th class="u-custom-color-2"></th>
+                </tr>
+            </thead>
+            <tbody>
+        @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ValorLiberado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ValorEmprestimo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataVenc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ValorParcela)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QtdParcela)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TaxaJuros)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QtdParcelaRest)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StatusEmprest)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TipoEmprest)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdClienteNavigation.Nome)
+                    </td>
+                    <td>
+                        <a class="u-btn-round u-button-style u-custom-color-1 u-dialog-link u-hover-palette-1-light-1 u-radius-4 u-text-body-color u-btn-2" asp-action="Edit" asp-route-id="@item.IdEmprestimo">Alterar</a> |
+                        <a class="u-btn-round u-button-style u-custom-color-1 u-dialog-link u-hover-palette-1-light-1 u-radius-4 u-text-body-color u-btn-2" asp-action="Details" asp-route-id="@item.IdEmprestimo">Detalhes</a> |
+                        <a class="u-btn-round u-button-style u-custom-color-1 u-dialog-link u-hover-palette-1-light-1 u-radius-4 u-text-body-color u-btn-2" asp-action="Delete" asp-route-id="@item.IdEmprestimo">Excluir</a>
+                    </td>
+                </tr>
+        }
+               </tbody>
+             </table>
+        </div>
+@*<p>
+    <a asp-action="Create">Adicionar Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorLiberado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorEmprestimo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataVenc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorParcela)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QtdParcela)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaxaJuros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QtdParcelaRest)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusEmprest)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoEmprest)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdClienteNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorLiberado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorEmprestimo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataVenc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorParcela)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QtdParcela)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaxaJuros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QtdParcelaRest)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusEmprest)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoEmprest)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdClienteNavigation.Nome)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdEmprestimo">Alterar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdEmprestimo">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdEmprestimo">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@

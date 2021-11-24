@@ -1,0 +1,76 @@
+﻿@model BankEmprestimoConsignado.Models.Cliente
+
+<p>
+    <a asp-action="Create" asp-controller="Emprestimos">Criar emprestimo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("Valor Liberado")
+            </th>
+            <th>
+                @Html.DisplayName("Valor Emprestimo")
+            </th>
+            <th>
+                @Html.DisplayName("Vencimento")
+            </th>
+            <th>
+                @Html.DisplayName("Valor Parcela")
+            </th>
+            <th>
+                @Html.DisplayName("Parcelas")
+            </th>
+            <th>
+                @Html.DisplayName("Taxa")
+            </th>
+            <th>
+                @Html.DisplayName("Parcelas Restant")
+            </th>
+            <th>
+                @Html.DisplayName("Status")
+            </th>
+            <th>
+                @Html.DisplayName("Tipo")
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Emprestimos) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorLiberado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorEmprestimo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataVenc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorParcela)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QtdParcela)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaxaJuros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QtdParcelaRest)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusEmprest)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoEmprest)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdEmprestimo">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdEmprestimo">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdEmprestimo">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

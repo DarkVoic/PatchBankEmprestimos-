@@ -1,0 +1,75 @@
+﻿@model BankEmprestimoConsignado.Models.Emprestimo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Relizar Empréstimo</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdCliente" class="control-label"></label>
+                <select asp-for="IdCliente" class ="form-control" asp-items="ViewBag.IdCliente"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorLiberado" class="control-label"></label>
+                <input asp-for="ValorLiberado" class="form-control" />
+                <span asp-validation-for="ValorLiberado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorEmprestimo" class="control-label"></label>
+                <input asp-for="ValorEmprestimo" class="form-control" />
+                <span asp-validation-for="ValorEmprestimo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataVenc" class="control-label"></label>
+                <input asp-for="DataVenc" class="form-control" />
+                <span asp-validation-for="DataVenc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorParcela" class="control-label"></label>
+                <input asp-for="ValorParcela" class="form-control" />
+                <span asp-validation-for="ValorParcela" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QtdParcela" class="control-label"></label>
+                <input asp-for="QtdParcela" class="form-control" />
+                <span asp-validation-for="QtdParcela" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TaxaJuros" class="control-label"></label>
+                <input asp-for="TaxaJuros" class="form-control" />
+                <span asp-validation-for="TaxaJuros" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QtdParcelaRest" class="control-label"></label>
+                <input asp-for="QtdParcelaRest" class="form-control" />
+                <span asp-validation-for="QtdParcelaRest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatusEmprest" class="control-label"></label>
+                <input asp-for="StatusEmprest" class="form-control" />
+                <span asp-validation-for="StatusEmprest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoEmprest" class="control-label"></label>
+                <input asp-for="TipoEmprest" class="form-control" />
+                <span asp-validation-for="TipoEmprest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Incluir" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar a lista de empréstimos</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

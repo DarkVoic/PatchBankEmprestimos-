@@ -1,0 +1,405 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+ /* background-color: #1861ac;*/
+  background-color: #4800ff;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #1861ac
+      
+     /* #0366d6;*/
+}
+
+.btn-primary {
+    color: #1861ac;
+    /*#fff;*/
+    /*background-color: #1b6ec2;*/
+    background-color: #4800ff;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #1861ac;
+    /*#fff;*/
+    /*background-color: #1b6ec2;*/
+    border-color: #1861ac;
+    background-color: #4800ff;
+   /* background-color: #1861ac;*/
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* Styles adicionais do Atene*/
+
+.u-section-1 {
+    background-image: none;
+}
+
+    .u-section-1 .u-sheet-1 {
+        min-height: 663px;
+    }
+
+    .u-section-1 .u-group-1 {
+        min-height: 607px;
+        margin-top: 36px;
+        margin-bottom: 20px;
+    }
+
+    .u-section-1 .u-container-layout-1 {
+        padding-bottom: 0;
+    }
+
+    .u-section-1 .u-text-1 {
+        font-size: 4.5rem;
+        text-align: center;
+        margin: 0 872px 0 0;
+    }
+
+    .u-section-1 .u-form-1 {
+        height: 133px;
+        margin: -21px 30px 0 810px;
+    }
+
+    .u-section-1 .u-btn-1 {
+        background-image: none;
+        border-style: none;
+        font-weight: 700;
+        padding: 3px 25px;
+    }
+
+    .u-section-1 .u-btn-2 {
+        font-size: 0.9375rem;
+        border-style: none;
+        font-weight: 700;
+        background-image: none;
+        text-align: center;
+        margin: -28px 493px 0 auto;
+        padding: 2px 25px;
+    }
+
+    .u-section-1 .u-btn-3 {
+        font-size: 0.9375rem;
+        border-style: none;
+        font-weight: 700;
+        background-image: none;
+        text-align: center;
+        margin: -28px auto 0 409px;
+        padding: 2px 25px;
+    }
+
+    .u-section-1 .u-btn-4 {
+        font-size: 0.9375rem;
+        border-style: none;
+        font-weight: 700;
+        background-image: none;
+        text-align: center;
+        margin: -28px auto 0 210px;
+        padding: 2px 25px;
+    }
+
+    .u-section-1 .u-table-1 {
+        width: 1104px;
+        margin: 13px auto 0;
+    }
+
+    .u-section-1 .u-table-header-1 {
+        font-weight: 700;
+        background-image: none;
+    }
+
+    .u-section-1 .u-table-cell-1 {
+        background-image: none;
+        font-size: 1rem;
+    }
+
+    .u-section-1 .u-table-cell-2 {
+        background-image: none;
+        font-size: 1rem;
+    }
+
+    .u-section-1 .u-table-cell-3 {
+        background-image: none;
+        font-size: 1rem;
+    }
+
+    .u-section-1 .u-table-cell-4 {
+        background-image: none;
+        font-size: 1rem;
+    }
+
+    .u-section-1 .u-table-cell-5 {
+        background-image: none;
+        font-size: 1rem;
+    }
+
+    .u-section-1 .u-table-cell-6 {
+        background-image: none;
+        font-size: 1rem;
+    }
+
+    .u-section-1 .u-table-cell-7 {
+        background-image: none;
+        font-size: 1rem;
+    }
+
+    .u-section-1 .u-table-cell-8 {
+        background-image: none;
+        font-size: 1rem;
+    }
+
+@media (max-width: 1199px) {
+    .u-section-1 .u-sheet-1 {
+        min-height: 694px;
+    }
+
+    .u-section-1 .u-group-1 {
+        margin-bottom: 14px;
+        min-height: 644px;
+    }
+
+    .u-section-1 .u-container-layout-1 {
+        padding-bottom: 10px;
+    }
+
+    .u-section-1 .u-text-1 {
+        width: auto;
+        margin-right: 540px;
+    }
+
+    .u-section-1 .u-form-1 {
+        margin-top: 0;
+        margin-right: 34px;
+        margin-left: 606px;
+    }
+
+    .u-section-1 .u-btn-2 {
+        margin-right: auto;
+        margin-left: 346px;
+    }
+
+    .u-section-1 .u-btn-3 {
+        margin-left: 209px;
+    }
+
+    .u-section-1 .u-btn-4 {
+        margin-left: 10px;
+    }
+
+    .u-section-1 .u-table-1 {
+        width: 940px;
+    }
+}
+
+@media (max-width: 991px) {
+    .u-section-1 .u-sheet-1 {
+        min-height: 699px;
+    }
+
+    .u-section-1 .u-group-1 {
+        min-height: 663px;
+        margin-bottom: 0;
+    }
+
+    .u-section-1 .u-text-1 {
+        margin-right: 322px;
+    }
+
+    .u-section-1 .u-form-1 {
+        margin-right: 11px;
+        margin-left: 409px;
+    }
+
+    .u-section-1 .u-btn-2 {
+        margin-left: 294px;
+    }
+
+    .u-section-1 .u-btn-3 {
+        margin-left: 177px;
+    }
+
+    .u-section-1 .u-btn-4 {
+        margin-left: 0;
+    }
+
+    .u-section-1 .u-table-1 {
+        margin-top: 24px;
+        margin-right: initial;
+        margin-left: initial;
+        width: auto;
+    }
+
+    .u-section-1 .u-table-cell-1 {
+        font-size: 0.75rem;
+    }
+
+    .u-section-1 .u-table-cell-2 {
+        font-size: 0.75rem;
+    }
+
+    .u-section-1 .u-table-cell-3 {
+        font-size: 0.75rem;
+    }
+
+    .u-section-1 .u-table-cell-4 {
+        font-size: 0.75rem;
+    }
+
+    .u-section-1 .u-table-cell-5 {
+        font-size: 0.75rem;
+    }
+
+    .u-section-1 .u-table-cell-6 {
+        font-size: 0.75rem;
+    }
+
+    .u-section-1 .u-table-cell-7 {
+        font-size: 0.75rem;
+    }
+
+    .u-section-1 .u-table-cell-8 {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .u-section-1 .u-sheet-1 {
+        min-height: 709px;
+    }
+
+    .u-section-1 .u-group-1 {
+        margin-top: 28px;
+        margin-bottom: 14px;
+        min-height: 671px;
+    }
+
+    .u-section-1 .u-text-1 {
+        margin-right: 143px;
+    }
+
+    .u-section-1 .u-form-1 {
+        margin-top: 36px;
+        margin-right: 28px;
+        margin-left: 212px;
+    }
+
+    .u-section-1 .u-btn-2 {
+        margin-top: -34px;
+        margin-left: 9px;
+    }
+
+    .u-section-1 .u-btn-3 {
+        margin-top: -74px;
+        margin-left: 9px;
+    }
+
+    .u-section-1 .u-btn-4 {
+        margin-top: -74px;
+        margin-left: 9px;
+    }
+
+    .u-section-1 .u-table-1 {
+        margin-top: 128px;
+        width: auto;
+        margin-right: initial;
+        margin-left: initial;
+    }
+}
+
+@media (max-width: 575px) {
+    .u-section-1 .u-sheet-1 {
+        min-height: 854px;
+    }
+
+    .u-section-1 .u-group-1 {
+        margin-bottom: 28px;
+        min-height: 761px;
+    }
+
+    .u-section-1 .u-container-layout-1 {
+        padding-bottom: 11px;
+    }
+
+    .u-section-1 .u-text-1 {
+        font-size: 3rem;
+        margin-right: 72px;
+    }
+
+    .u-section-1 .u-form-1 {
+        width: 300px;
+        margin-top: 185px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .u-section-1 .u-btn-2 {
+        margin-top: -183px;
+        margin-left: 22px;
+    }
+
+    .u-section-1 .u-btn-3 {
+        margin-top: -76px;
+        margin-left: 20px;
+    }
+
+    .u-section-1 .u-btn-4 {
+        margin-top: -76px;
+        margin-left: 20px;
+    }
+
+    .u-section-1 .u-table-1 {
+        margin-top: 271px;
+        width: auto;
+        margin-right: initial;
+        margin-left: initial;
+    }
+}
