@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="BankEmprestimoConsignadoTecWeb" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\mathe\\Universidade\ PUC\\7\ -\ Período\ -\ Materias\ do\ 6º\\Tec\ Web\\TrabalhoFinal\\BankEmprestimoConsignado\\BankEmprestimoConsignado\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="BankEmprestimoConsignado.Data.BankContext" description="" value="Data Source=tcp:cursomvcdbserver.database.windows.net,1433;Initial Catalog=CursoMVC_v1_db;User Id=darkvoic@cursomvcdbserver;Password=game1998" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\mathe\\Universidade\ PUC\\7\ -\ Período\ -\ Materias\ do\ 6º\\Tec\ Web\\TrabalhoFinal\\BankEmprestimoConsignado\\BankEmprestimoConsignado\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\BankEmprestimoConsignado\.Data\.BankContext\.sql$" />
+  </parameter>
+  <parameter name="BankEmprestimoConsignado.Data.BankContext2" description="" value="Data Source=tcp:cursomvcdbserver.database.windows.net,1433;Initial Catalog=CursoMVC_v1_db;User Id=darkvoic@cursomvcdbserver;Password=game1998" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\mathe\\Universidade\ PUC\\7\ -\ Período\ -\ Materias\ do\ 6º\\Tec\ Web\\TrabalhoFinal\\BankEmprestimoConsignado\\BankEmprestimoConsignado\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\BankEmprestimoConsignado\.Data\.BankContext2\.sql$" />
+  </parameter>
+</parameters>

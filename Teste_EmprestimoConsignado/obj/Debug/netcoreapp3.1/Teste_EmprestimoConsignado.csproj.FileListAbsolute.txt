@@ -1,6 +1,3 @@
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\API_EmprestimoConsignado.deps.json
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\API_EmprestimoConsignado.runtimeconfig.json
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\API_EmprestimoConsignado.runtimeconfig.dev.json
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\BankEmprestimoConsignado.Views.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\BankEmprestimoConsignado.Views.pdb
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\BankEmprestimoConsignado.deps.json
@@ -10,8 +7,6 @@ C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoF
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\BankEmprestimoConsignado.exe
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\API_EmprestimoConsignado.StaticWebAssets.xml
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\API_EmprestimoConsignado.exe
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll
@@ -71,7 +66,6 @@ C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoF
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -101,9 +95,6 @@ C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoF
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
@@ -261,10 +252,7 @@ C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoF
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\API_EmprestimoConsignado.dll
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\BankEmprestimoConsignado.dll
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\API_EmprestimoConsignado.pdb
-C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\API_EmprestimoConsignado.xml
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\BankEmprestimoConsignado.pdb
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\obj\Debug\netcoreapp3.1\Teste_EmprestimoConsignado.csproj.AssemblyReference.cache
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\obj\Debug\netcoreapp3.1\Teste_EmprestimoConsignado.GeneratedMSBuildEditorConfig.editorconfig
@@ -276,3 +264,5 @@ C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoF
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\obj\Debug\netcoreapp3.1\Teste_EmprestimoConsignado.pdb
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\obj\Debug\netcoreapp3.1\Teste_EmprestimoConsignado.genruntimeconfig.cache
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\MySql.Data.EntityFrameworkCore.dll
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\Teste_EmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll

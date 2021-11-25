@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\obj\Release\netcoreapp3.1\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\obj\Release\netcoreapp3.1\PubTmp\EFSQLScripts\BankEmprestimoConsignado.Data.BankContext.sql" />
+  <dbfullsql path="C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\obj\Release\netcoreapp3.1\PubTmp\EFSQLScripts\BankEmprestimoConsignado.Data.BankContext2.sql" />
+</sitemanifest>

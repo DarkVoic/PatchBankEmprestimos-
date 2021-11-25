@@ -27,13 +27,25 @@ namespace BankEmprestimoConsignado
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Adicionando o GetConnection do meu MySql 
             string mySqlConnection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContextPool<BankContext>(options =>
                         options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
 
-            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<BankContext>();
+            //Autenticação Facebook e Google
+            services.AddAuthentication()
+                .AddGoogle(googleOptions => {
+                    googleOptions.ClientId = "582843770413-enaa2ma1jr8r1phmmc454514qdcdbk41.apps.googleusercontent.com";
+                    googleOptions.ClientSecret = "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";
+                })
+                .AddFacebook(facebookOptions => {
+                    facebookOptions.AppId = "1310991852665960";
+                    facebookOptions.AppSecret = "e4c06a4dc67c0b80934d5e6627650229";
+                });
 
-            services.AddAuthorization(options => options.AddPolicy("Empregados", policy => policy.RequireClaim("gerente")));
+            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<BankContext>();
+         
+            services.AddAuthorization(options => options.AddPolicy("Empregados", policy => policy.RequireRole("Gerente")));
             services.AddAuthorization(options => options.AddPolicy("cliente", policy => policy.RequireClaim("cliente")));
             //services.AddIdentityConfiguration(Configuration);
             services.AddRazorPages();

@@ -1,4 +1,0 @@
-﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/Identity" Path="C:\Users\mathe\.nuget\packages\microsoft.aspnetcore.identity.ui\3.1.18\staticwebassets\V4\" />
-  <ContentRoot BasePath="_content/BankEmprestimoConsignado" Path="C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\wwwroot\" />
-</StaticWebAssets>

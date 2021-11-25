@@ -21,18 +21,18 @@ namespace API_EmprestimoConsignado.Controllers
             _context = context;
         }
 
-        // GET: api/Emprestimoes
+        // GET: api/Emprestimos
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Emprestimo>>> GetEmprestimos()
         {
             return await _context.Emprestimos.ToListAsync();
         }
 
-        // GET: api/Emprestimoes/5
+        // GET: api/Emprestimos/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Emprestimo>> GetEmprestimo(int id)
         {
-            var emprestimo = await _context.Emprestimos.FirstOrDefaultAsync(x => x.IdEmprestimo == id);
+            var emprestimo = await _context.Emprestimos.FindAsync(id);
 
             if (emprestimo == null)
             {
@@ -42,7 +42,7 @@ namespace API_EmprestimoConsignado.Controllers
             return emprestimo;
         }
 
-        // PUT: api/Emprestimoes/5
+        // PUT: api/Emprestimos/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
@@ -74,7 +74,7 @@ namespace API_EmprestimoConsignado.Controllers
             return NoContent();
         }
 
-        // POST: api/Emprestimoes
+        // POST: api/Emprestimos
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
@@ -100,7 +100,7 @@ namespace API_EmprestimoConsignado.Controllers
             return CreatedAtAction("GetEmprestimo", new { id = emprestimo.IdEmprestimo }, emprestimo);
         }
 
-        // DELETE: api/Emprestimoes/5
+        // DELETE: api/Emprestimos/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Emprestimo>> DeleteEmprestimo(int id)
         {

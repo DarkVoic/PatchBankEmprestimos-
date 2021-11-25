@@ -1,7 +1,7 @@
 ﻿@page 
 @model RegisterModel
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Registrar";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -37,26 +37,27 @@
     </div>
     <div class="col-md-6 col-md-offset-2">
         <section>
-            <h4>Use another service to register.</h4>
+            <h4>Use outro serviço para se registrar.</h4>
             <hr />
             @{
                 if ((Model.ExternalLogins?.Count ?? 0) == 0)
                 {
                     <div>
                         <p>
-                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
-                            for details on setting up this ASP.NET application to support logging in via external services.
+                            Não há serviços de autenticação externa configurados. Consulte <a href="https://go.microsoft.com/fwlink/?LinkID=532715">este artigo</a>
+                            para obter detalhes sobre como configurar este aplicativo ASP.NET para oferecer suporte ao logon por meio de serviços externos.
                         </p>
                     </div>
                 }
                 else
                 {
+                    <p>Entrar com o Facebook ou Google</p>
                     <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
                         <div>
                             <p>
                                 @foreach (var provider in Model.ExternalLogins)
                                 {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                    <button type="submit" class="btn btn-outline-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
                                 }
                             </p>
                         </div>

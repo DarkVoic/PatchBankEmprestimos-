@@ -24,7 +24,8 @@ namespace BankEmprestimoConsignado.Configurations
             services.AddDbContextPool<BankContext2>(options =>
                         options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
 
-            services.AddDefaultIdentity<IdentityUser>()
+            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                    .AddRoles<ApplicationRole>()
                 .AddEntityFrameworkStores<BankContext2>();
 
             return services;

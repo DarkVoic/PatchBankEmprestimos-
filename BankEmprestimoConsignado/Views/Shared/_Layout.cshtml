@@ -2,8 +2,6 @@
 @{
    
 }
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,21 +11,20 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/Cliente.css"/>
-    <link rel="stylesheet" href="/front/codecss.css" media="screen">
-    <link rel="stylesheet" href="/front/Cliente.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="codejs.js" defer=""></script>
+    <link rel="stylesheet" href="~/front/codecss.css" media="screen">
+    <link rel="stylesheet" href="~/front/Cliente.css" media="screen">
+    @*<script class="u-script" type="text/javascript" src="/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/codejs.js" defer=""></script>*@
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link href="images/f620ff6d1eb44ce1adf9d4da0b5c40b1.png"/>
+    <link href="~/images/f620ff6d1eb44ce1adf9d4da0b5c40b1.png"/>
     <script type="application/ld+json">{
 		"@Context": "http://schema.org",
 		"name": "Emprestimo Consignado",
-		"logo": "images/f620ff6d1eb44ce1adf9d4da0b5c40b1.png"}</script>
+		"logo": "~/images/f620ff6d1eb44ce1adf9d4da0b5c40b1.png"}</script>
     <meta name="theme-color" content="#104e92">
     <meta property="og:title" content="Cliente">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-
     
 </head>
 
@@ -37,11 +34,14 @@
       <div class="u-section-rows">
         <div class="u-custom-color-2 u-section-row u-section-row-1" id="sec-71fa">
           <div class="u-clearfix u-sheet ">
-            <a class="u-image u-image-1" data-image-width="50" data-image-height="50" asp-area="" asp-controller="Home" asp-action="Index">
-              <img src="images/f620ff6d1eb44ce1adf9d4da0b5c40b1.png" class="u-logo-image" data-image-width="80" alt="Logo do Banco">
+            <a class="container-1 u-image u-image-1" data-image-width="50" data-image-height="50" asp-area="" asp-controller="Home" asp-action="Index">
+              <img src="~/images/f620ff6d1eb44ce1adf9d4da0b5c40b1.png" class="u-logo-image" data-image-width="80" alt="Logo do Banco">
             </a>
-             <partial name="_LoginPartial"> 
-             <partial name="_OpcoesMenu">
+            <div class="entradaUser">
+                <partial name="_LoginPartial">
+            </div>
+             @*
+             <partial name="_OpcoesMenu">*@
             <h5> </h5>
           </div> 
         </div>
@@ -50,7 +50,7 @@
             <nav class= "u-offcanvas u-menu-1" data-responsive-from="MD" data-submenu-level="on-click">
               <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
                 <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-body-color" href="#" style="height: 24px; color: rgb(255, 255, 255) !important;">
-                  <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 124 124" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-995b"></use></svg>
+                  <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 124 124" style=""></svg>
                   <svg class="u-svg-content" viewBox="0 0 124 124" x="0px" y="0px" id="svg-995b" style="enable-background:new 0 0 124 124;"><g><path d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z"></path><path d="M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z"></path><path d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z"></path></g></svg>
                 </a>
               </div>
@@ -175,16 +175,30 @@
     margin-right: 24px;
     margin-left: 59px;
   }
-}</style>
+.container-1 {
+   width: 700px; 
+    margin-left: auto;
+    margin-right: auto; 
+    margin: 0 auto;
+    width: 50%;
+  }
+ .entradaUser{
+     align-items:center;
+     margin-left: auto;
+     margin-right: auto; 
+     margin: 0 auto;
+     
+ }
+</style>
           
     <main role="main" class="bd-content order-1 py-5" style="margin: 5em">
 
         @RenderBody()
     </main>
     <footer class="bd-footer py-5 mt-5 bg-light">
-        <div class="container">
+        <div class="container-1">
             <a class="u-image-1" data-image-width="200" data-image-height="200">
-            <img src="images/f620ff6d1eb44ce1adf9d4da0b5c40b1.png" class="u-logo-image u-logo-image-1">
+            <img src="~/images/f620ff6d1eb44ce1adf9d4da0b5c40b1.png" class="u-logo-image u-logo-image-1">
             </a>
             &copy; 2021 - CEC - Concessão de empréstimo consignado - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>

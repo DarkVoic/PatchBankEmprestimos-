@@ -13,44 +13,28 @@ using BankEmprestimoConsignado.Business;
 
 namespace BankEmprestimoConsignado.Controllers
 {
-    //[Authorize( = "gerente")]
+    //[Authorize(Roles = "Gerente")]
     //[ClaimsAuthorize("gerente", "editar")]
+    [Authorize]
     public class ClientesController : Controller
     {
         private readonly BankContext _context;
         private EmprestimoConsignado regrasNegocio;
-        private readonly BankContext2 _user;
+        private readonly ApplicationUser usuario;
         public ClientesController(BankContext context)
         {
             _context = context;
            regrasNegocio = new EmprestimoConsignado();
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Login( string returnUrl = null)
-        //{
-        //    _user.Users.
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return View(user);
-        //    }
-            
-        //    if(usuario != null)
-        //    {
-        //        FormsAuthentication.
-        //    }
-        //}
-
         // GET: Clientes
         //[AllowAnonymous]
-        [Route("Clientes")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Clientes.ToListAsync());
         }
 
         // GET: Clientes/Details/5
-        [Route("DetalhesCliente")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -71,7 +55,6 @@ namespace BankEmprestimoConsignado.Controllers
         }
 
         // GET: Clientes/Create
-        [Route("CriarCliente")]
         public IActionResult Create()
         {
             return View();
@@ -94,7 +77,6 @@ namespace BankEmprestimoConsignado.Controllers
         }
 
         // GET: Clientes/Edit/5
-        [Route("EditarClientes/{id}")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -146,7 +128,6 @@ namespace BankEmprestimoConsignado.Controllers
         }
 
         // GET: Clientes/Delete/5
-        [Route("DeletarCliente")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

@@ -18,15 +18,14 @@ namespace BankEmprestimoConsignado.Areas.Identity.Pages.Account.Manage
         public IndexModel(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager)
-            
-
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            
         }
 
         public string Username { get; set; }
+
+        public string Tipoacesso { get; set; }
 
         [TempData]
         public string StatusMessage { get; set; }
@@ -40,13 +39,17 @@ namespace BankEmprestimoConsignado.Areas.Identity.Pages.Account.Manage
             [Display(Name = "Numero de telefone")]
             public string PhoneNumber { get; set; }
 
+            //[Required(ErrorMessage = "O campo ACESSO é obrigatório")]
+            //[Display(Name = "Tipo de Acesso")]
+            //public string Tipo_Acesso { get; set; }
+
         }
 
         private async Task LoadAsync(ApplicationUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-
+            //var tipoAcesso = await _signInManager.get
             Username = userName;
 
             Input = new InputModel
@@ -60,7 +63,7 @@ namespace BankEmprestimoConsignado.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound($"Incapaz de carregar o usuário com ID '{_userManager.GetUserId(User)}'.");
             }
 
             await LoadAsync(user);
@@ -70,9 +73,10 @@ namespace BankEmprestimoConsignado.Areas.Identity.Pages.Account.Manage
         public async Task<IActionResult> OnPostAsync()
         {
             var user = await _userManager.GetUserAsync(User);
+            
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound($"Incapaz de carregar o usuário com ID '{_userManager.GetUserId(User)}'.");
             }
 
             if (!ModelState.IsValid)
@@ -87,18 +91,12 @@ namespace BankEmprestimoConsignado.Areas.Identity.Pages.Account.Manage
                 var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
                 if (!setPhoneResult.Succeeded)
                 {
-                    StatusMessage = "Unexpected error when trying to set phone number.";
+                    StatusMessage = "Erro inesperado ao tentar definir o número de telefone.";
                     return RedirectToPage();
                 }
             }
-            //var acesso = await _userManager.GetClaimsAsync(user);
-            //if (acesso != null)
-            //{
-            //    var setAcesso = new ApplicationUserClaim { ClaimType = Input.TipoAcesso };
-            //}
-
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your profile has been updated";
+            StatusMessage = "Seu perfil foi atualizado!!";
             return RedirectToPage();
         }
     }

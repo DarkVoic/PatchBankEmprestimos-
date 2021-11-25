@@ -15,6 +15,7 @@ using BankEmprestimoConsignado.Extensions;
 namespace BankEmprestimoConsignado.Controllers
 {
     //[Authorize]
+    [Authorize]
     public class EmprestimosController : Controller
     {
         private readonly BankContext _context;
@@ -29,7 +30,6 @@ namespace BankEmprestimoConsignado.Controllers
 
         // GET: Emprestimos
         //[AllowAnonymous]
-        //[Route("Emprestimos")]
         public async Task<IActionResult> Index()
         {
             // Adicionados validação de usuário
@@ -37,9 +37,9 @@ namespace BankEmprestimoConsignado.Controllers
             var usuario = User.Claims.ToArray();
             //if (usuario[3].Type == "cliente")
             //{
-                //var emprestimoconsignadoContext = _context.Emprestimos.Include(e => e.IdClienteNavigation).Where(u => u.IdClienteNavigation == usuarioId);
-                //return View(await emprestimoconsignadoContext.ToListAsync());
-            
+            //    var emprestimoconsignadoContext = _context.Emprestimos.Include(e => e.IdClienteNavigation).Where(u => u.IdClienteNavigation == usuarioId);
+            //    return View(await emprestimoconsignadoContext.ToListAsync());
+            //}
             var bankContext = _context.Emprestimos.Include(e => e.IdClienteNavigation);
             return View(await bankContext.ToListAsync());
         }
@@ -80,8 +80,8 @@ namespace BankEmprestimoConsignado.Controllers
         {
             if (ModelState.IsValid)
             {
-                //RetornaCliente(emprestimo.CpfCliente);
-                //if (regrasNegocio.PropostaDeEmprestimo(cliente, emprestimo.ValorEmprestimo, emprestimo.QtdParcela, emprestimo.TaxaJuros, emprestimo.TipoEmprest, emprestimo.DataVenc))
+                //RetornaCliente(emprestimo.IdCliente);
+                //if (regrasNegocio.PropostaDeEmprestimo(emprestimo.IdClienteNavigation, emprestimo.ValorEmprestimo, emprestimo.QtdParcela, emprestimo.TaxaJuros, emprestimo.TipoEmprest, emprestimo.DataVenc))
                 //{
 
                 //}
@@ -182,9 +182,9 @@ namespace BankEmprestimoConsignado.Controllers
         {
             return _context.Emprestimos.Any(e => e.IdEmprestimo == id);
         }
-        private Cliente RetornaCliente(string cpfCliente)
+        private Cliente RetornaCliente(int cpfCliente)
         {
-            var cliente = _context.Clientes.FirstOrDefault(c => c.Cpf == double.Parse(cpfCliente));
+            var cliente = _context.Clientes.FirstOrDefault(c => c.Cpf == cpfCliente);
             return cliente;
         }
     }

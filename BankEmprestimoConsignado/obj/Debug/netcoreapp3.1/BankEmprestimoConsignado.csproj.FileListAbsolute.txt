@@ -220,3 +220,13 @@ C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoF
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.cshtml.g.cs
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\bin\Debug\netcoreapp3.1\Azure.Extensions.AspNetCore.Configuration.Secrets.dll
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\bin\Debug\netcoreapp3.1\Azure.Identity.dll
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\bin\Debug\netcoreapp3.1\Azure.Security.KeyVault.Secrets.dll
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\mathe\Universidade PUC\7 - Período - Materias do 6º\Tec Web\TrabalhoFinal\BankEmprestimoConsignado\BankEmprestimoConsignado\bin\Debug\netcoreapp3.1\System.Memory.Data.dll

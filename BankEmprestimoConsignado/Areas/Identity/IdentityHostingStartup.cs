@@ -15,14 +15,16 @@ namespace BankEmprestimoConsignado.Areas.Identity
     {
         public void Configure(IWebHostBuilder builder)
         {
+
             builder.ConfigureServices((context, services) =>
             {
-                string mySqlConnection = context.Configuration.GetConnectionString("DefaultConnection");
-                services.AddDbContextPool<BankContext2>(options =>
-                            options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
-
-                services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
-                    .AddEntityFrameworkStores<BankContext2>();
+                //string mySqlConnection = context.Configuration.GetConnectionString("DefaultConnection");
+                //services.AddDbContextPool<BankContext2>(options =>
+                //            options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
+                
+                //services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                //    .AddRoles<ApplicationRole>()
+                //    .AddEntityFrameworkStores<BankContext2>();
             });
         }
     }

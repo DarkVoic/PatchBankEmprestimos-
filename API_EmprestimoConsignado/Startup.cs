@@ -33,8 +33,8 @@ namespace API_EmprestimoConsignado
             services.AddDbContextPool<BankContext>(options =>
                         options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
 
+
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Emprestimo", Version = "v1" }); });
-            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,8 +44,10 @@ namespace API_EmprestimoConsignado
             {
                 app.UseDeveloperExceptionPage();
             }
+
             app.UseSwagger();
-            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Emprestimo"); });
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("./v1/swagger.json", "API Emprestimo");});
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

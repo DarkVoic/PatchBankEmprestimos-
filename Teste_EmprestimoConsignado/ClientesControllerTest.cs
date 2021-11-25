@@ -1,4 +1,5 @@
-﻿using API_EmprestimoConsignado.Controllers;
+﻿//using API_EmprestimoConsignado.Controllers;
+using BankEmprestimoConsignado.Controllers;
 using BankEmprestimoConsignado.Data;
 using BankEmprestimoConsignado.Models;
 using Microsoft.EntityFrameworkCore;
@@ -33,16 +34,16 @@ namespace Teste_EmprestimoConsignado
             _mockContext.Setup(m => m.SaveChangesAsync(It.IsAny<CancellationToken>())).ReturnsAsync(1);
         }
 
-        [Fact]
-        public async Task Get_Categoria()
-        {
-            var service = new EmprestimosController(_mockContext.Object);
+        //[Fact]
+        //public async Task Get_Categoria()
+        //{
+        //    var service = new EmprestimosController(_mockContext.Object);
 
-            await service.GetEmprestimo(1);
-            _mockSet.Verify(expression: m => m.FindAsync(1),
-                times: Times.Once());
+        //    await service.GetEmprestimo(1);
+        //    _mockSet.Verify(expression: m => m.FindAsync(1),
+        //        times: Times.Once());
 
-        }
+        //}
 
         //[Fact]
         //public async Task Put_Categoria()

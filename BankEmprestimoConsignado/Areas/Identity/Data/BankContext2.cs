@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using BankEmprestimoConsignado.Areas.Identity;
 using BankEmprestimoConsignado.Data;
 using BankEmprestimoConsignado.Areas.Identity.Data;
+using static BankEmprestimoConsignado.Data.ApplicationRole;
 
 namespace BankEmprestimoConsignado.Data
 {
     public class BankContext2 : IdentityDbContext<ApplicationUser, ApplicationRole, string, ApplicationUserClaim, ApplicationUserRole, ApplicationUserLogin, ApplicationRoleClaim, ApplicationUserToken>
-
     {
         public BankContext2(DbContextOptions<BankContext2> options): base(options)
         {
